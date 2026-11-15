@@ -1,0 +1,14 @@
+{
+  "name": "autobuildx-video",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render"
+  },
+  "dependencies": {
+    "@remotion/cli": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "latest"
+  }
+}
