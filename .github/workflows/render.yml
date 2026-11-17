@@ -23,7 +23,7 @@ jobs:
         run: |
           pip install edge-tts
           mkdir -p public
-          edge-tts --voice hi-IN-MadhurNeural --text "Kya aap abhi bhi manual kaam mein uljhe hain? Slow replies aur missed calls se rozana clients ka nuksan hota hai. Miliye Prince se aur AutoBuildX AI ke saath apne business ka 80 percent kaam automate karein. Shuru karne ke liye abhi DM karein AUTO!" --write-media public/voice.mp3
+          edge-tts --voice hi-IN-MadhurNeural --rate="+8%" --text "Socho, agar aapka business 24 hours kaam kare, bina ruke, bina thake aur bina har kaam ke liye kisi insaan par depend rahe, toh kaisa hoga? Aaj hazaaron businesses sirf is wajah se customers kho dete hain kyunki unke messages ka reply late hota hai, leads ka follow-up miss ho jata hai aur workload badhta rehta hai. Lekin AI Agents ke saath ab ye sab badal raha hai. AI Agents customers ko automatically reply kar sakte hain, new leads capture kar sakte hain, follow-ups kar sakte hain aur business ke repetitive tasks automate kar sakte hain. Ye sirf automation nahi hai. Ye business karne ka ek naya tareeka hai, jahan humans strategy par focus karte hain aur AI repetitive work handle karta hai. Welcome to the future of automation. We are AutoBuild-X. Don't just run your business. Build an intelligent business." --write-media public/voice.mp3
 
       - name: Render Video
         run: npx remotion render src/index.ts MyVideo out/video.mp4
@@ -33,4 +33,3 @@ jobs:
         with:
           name: final-video
           path: out/video.mp4
-          
